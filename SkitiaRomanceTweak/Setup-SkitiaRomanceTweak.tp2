@@ -10,8 +10,12 @@ LANGUAGE ~English~
 		 
 LANGUAGE ~Italian~
          ~Italian~
-         ~%MOD_FOLDER%/tra/italian/setup.tra~		 
+         ~%MOD_FOLDER%/tra/italian/setup.tra~		
 
+LANGUAGE ~Russian~
+		 ~Russian~
+		  ~%MOD_FOLDER%/tra/russian/setup.tra~	
+		  
 BEGIN @1 
 COMPILE ~%MOD_FOLDER%/dialogue/Tweaks.D~
 COPY_EXISTING ~BALDUR.BCS~ ~override~
