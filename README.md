@@ -2,7 +2,7 @@
 This mod adjusts the original BG2 romances to be a bit less harsh when you separate from a romanceable companion for a while. 
 It makes the following changes to the romance experience
 
--Aerie, Anomen, and Viconia's romance will not end for up to fifty days after seperating from the player, a significant increase from the original time frame.
+-Aerie, Anomen, and Viconia's romance will not end for up to fifty days after seperating from the player, a significant increase from the original 3 day time frame.
 
 -Jaheira's romance will not break on seperation, except on two occasions. 
 
