@@ -16,8 +16,56 @@ LANGUAGE ~Russian~
 		 ~Russian~
 		  ~%MOD_FOLDER%/tra/russian/setup.tra~	
 		  
-BEGIN @1 
+BEGIN @11
 COMPILE ~%MOD_FOLDER%/dialogue/Tweaks.D~
+
+BEGIN @13
+SUBCOMPONENT @12
+COPY_EXISTING ~BALDUR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY ~SetGlobalTimer("AerieOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("AerieOutOfParty","GLOBAL",SEVEN_DAYS)~
+   
+   REPLACE_TEXTUALLY ~SetGlobalTimer("ViconiaOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("ViconiaOutOfParty","GLOBAL",SEVEN_DAYS)~
+   
+      REPLACE_TEXTUALLY ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",SEVEN_DAYS)~
+ END
+  BUT_ONLY_IF_IT_CHANGES
+
+BEGIN @14
+SUBCOMPONENT @12
+COPY_EXISTING ~BALDUR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY ~SetGlobalTimer("AerieOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("AerieOutOfParty","GLOBAL",FOURTEEN_DAYS)~
+   
+   REPLACE_TEXTUALLY ~SetGlobalTimer("ViconiaOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("ViconiaOutOfParty","GLOBAL",FOURTEEN_DAYS)~
+   
+      REPLACE_TEXTUALLY ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",FOURTEEN_DAYS)~
+ END
+  BUT_ONLY_IF_IT_CHANGES
+
+BEGIN @15
+SUBCOMPONENT @12
+COPY_EXISTING ~BALDUR.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY ~SetGlobalTimer("AerieOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("AerieOutOfParty","GLOBAL",THIRTY_DAYS)~
+   
+   REPLACE_TEXTUALLY ~SetGlobalTimer("ViconiaOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("ViconiaOutOfParty","GLOBAL",THIRTY_DAYS)~
+   
+      REPLACE_TEXTUALLY ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",THREE_DAYS)~
+   ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",THIRTY_DAYS)~
+ END
+  BUT_ONLY_IF_IT_CHANGES
+
+BEGIN @16
+SUBCOMPONENT @12
 COPY_EXISTING ~BALDUR.BCS~ ~override~
   DECOMPILE_AND_PATCH BEGIN
    REPLACE_TEXTUALLY ~SetGlobalTimer("AerieOutOfParty","GLOBAL",THREE_DAYS)~
@@ -30,4 +78,3 @@ COPY_EXISTING ~BALDUR.BCS~ ~override~
    ~SetGlobalTimer("AnomenOutOfParty","GLOBAL",FIFTY_DAYS)~
  END
   BUT_ONLY_IF_IT_CHANGES
-  
